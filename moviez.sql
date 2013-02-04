@@ -1,4 +1,3 @@
-
 create table moviez
 (
   id serial2 not null,
