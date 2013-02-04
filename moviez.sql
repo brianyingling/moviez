@@ -1,5 +1,3 @@
-#####
-SQL tables
 
 create table moviez
 (
@@ -15,7 +13,7 @@ create table moviez
   plot text,
   poster varchar(200),
   rating varchar(4),
-  imdbVotes varchar(10)
+  imdbVotes varchar(10),
   imdbID varchar(15),
   response bool
 );
