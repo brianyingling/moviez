@@ -14,9 +14,10 @@ end
 print 'Enter a movie name: '
 title = gets.chomp
 
-movie = HTTParty.get('http://www.omdbapi.com/?t=#{title.split.join('+')}')
+movie = HTTParty.get("http://www.omdbapi.com/?t=#{title.split.join('+')}")
 
 movie_formatted = JSON(movie.body)
+puts movie_formatted
 
 sql = "insert into people (name) values (movie_formatted)"
 conn.exec(sql)
