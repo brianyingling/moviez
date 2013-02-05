@@ -11,7 +11,7 @@ create table moviez
   actors varchar(150),
   plot text,
   poster varchar(200),
-  rating varchar(4),
+  rated varchar(4),
   imdbVotes varchar(10),
   imdbID varchar(15),
   response bool
